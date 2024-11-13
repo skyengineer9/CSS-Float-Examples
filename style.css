@@ -1,0 +1,86 @@
+/* Universal selector to apply box-sizing to all elements */
+* {
+  box-sizing: border-box;
+}
+
+/* Styles for the first div */
+.div-1 {
+  background-color: grey; /* Background color for the first box */
+}
+
+/* Styles for the second div */
+.div-2 {
+  background-color: lightslategrey; /* Background color for the second box */
+}
+
+/* Styles for the third div */
+.div-3 {
+  background-color: lightgrey; /* Background color for the third box */
+}
+
+/* clearfix class to ensure proper float behavior */
+.clearfix {
+  width: 100%; /* Ensure the container takes the full width */
+  color: white; /* Text color for the clearfix container */
+}
+
+/* Styling the floated divs within the clearfix container */
+.clearfix div {
+  width: 33%; /* Divs take up one-third of the container width */
+  float: left; /* Float the divs side by side */
+  padding: 3em; /* Add padding inside the divs */
+}
+
+/* Clearfix pseudo-element to clear floats */
+.clearfix::after {
+  content: ""; /* Add an empty content value */
+  clear: both; /* Clear the floats */
+  display: table; /* Display as a block-level element */
+}
+
+/* Styling for image containers inside the .container */
+.image-container {
+  width: 33.3%; /* Each image container takes up one-third of the container */
+  float: left; /* Float the image containers side by side */
+  padding: 0.3em; /* Add some padding around the images */
+}
+
+/* Clearfix for the image container to ensure proper float behavior */
+.container::after {
+  content: ""; /* Add an empty content value */
+  clear: both; /* Clear the floats */
+  display: table; /* Display as a block-level element */
+}
+
+/* Navigation menu styles */
+ul {
+  list-style-type: none; /* Remove default list styling */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  overflow: hidden; /* Ensure no overflow */
+  background-color: #333; /* Set the background color of the nav */
+}
+
+/* Style for individual list items */
+li {
+  float: left; /* Float the list items horizontally */
+}
+
+/* Style for anchor tags (links) in the navigation */
+li a {
+  display: inline-block; /* Display the links as inline blocks */
+  color: white; /* Text color for the links */
+  text-align: center; /* Center align the text inside the links */
+  padding: 14px 16px; /* Add padding inside the links */
+  text-decoration: none; /* Remove underline from the links */
+}
+
+/* Hover effect for the navigation links */
+li a:hover {
+  background-color: #111; /* Change background on hover */
+}
+
+/* Active link styles for the current page */
+.active {
+  background-color: red; /* Highlight the active link with a red background */
+}
